@@ -17,6 +17,7 @@ public class Genero {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nome;
+    
     @OneToMany(mappedBy = "genero")
     private Set<Jogo> jogos = new HashSet<>();
 
